@@ -17,4 +17,15 @@
  .container {
   width: 800px;
   margin: 0 auto;
+  padding : 20px
+ }
+
+ figure {
+  border-left: 6px solid grey;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+ }
+
+ .coach {
+  background-color: lightyellow;
  }

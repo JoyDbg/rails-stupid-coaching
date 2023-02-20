@@ -1,13 +1,24 @@
 <div class="container">
   <h1> Stupid Coaching</h1>
-  <div class="grey_box">
-    <%= params[:answer] %>
-    <%= "-You" %>
-  </div>
-  
-  <div class="grey_box">
-  <%= @answer_coach %>
-  <%= "-Your coach" %>
-  <%= link_to"Ask a new question", ask_path %>
-  </div>
+
+  <figure>
+    <blockquote class="blockquote">
+      <p><%= params[:answer] %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      You
+    </figcaption>
+  </figure>
+
+    <figure class="coach">
+    <blockquote class="blockquote">
+      <p><%= @answer_coach %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Your coach
+    </figcaption>
+  </figure>
+
+  <p><%= link_to"Ask a new question", ask_path %></p>
+
 </div>

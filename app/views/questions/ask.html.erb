@@ -1,7 +1,11 @@
- <div class= "container">
+
+<div class="container">
   <h1> Stupid Coaching </h1>
   <p> Ask your coach anything: </p>
   <form action="/answer" data-turbo="false" method="get">
-    <input type="text" class="form-control col-lg-11" name="answer" value="<%= params[:answer] %>"><input type="submit" value="Ask" class="col-lg-1 btn btn-primary">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" name="answer" value="<%= params[:answer] %>">
+      <button class="btn btn-primary" type="submit">Ask</button>
+    </div>
   </form>
 </div>
