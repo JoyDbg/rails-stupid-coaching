@@ -1,0 +1,13 @@
+<div class="container">
+  <h1> Stupid Coaching</h1>
+  <div class="grey_box">
+    <%= params[:answer] %>
+    <%= "-You" %>
+  </div>
+  
+  <div class="grey_box">
+  <%= @answer_coach %>
+  <%= "-Your coach" %>
+  <%= link_to"Ask a new question", ask_path %>
+  </div>
+</div>
